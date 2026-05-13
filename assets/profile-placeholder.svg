@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Professional portrait placeholder</title>
+  <desc id="desc">A polished Saudi professional portrait placeholder for the CV website.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef3f8"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#071b3a"/>
+      <stop offset="1" stop-color="#04142d"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="620" fill="url(#bg)"/>
+  <g opacity="0.22" fill="#7b8797">
+    <rect x="80" y="345" width="54" height="210" rx="4"/>
+    <path d="M180 555V245l40-75 40 75v310z"/>
+    <rect x="310" y="185" width="70" height="370" rx="8"/>
+    <path d="M470 555V125l58 430z"/>
+    <path d="M610 555V70l25-52 25 52v485z"/>
+    <rect x="740" y="235" width="78" height="320" rx="8"/>
+  </g>
+  <g transform="translate(235 70)">
+    <ellipse cx="215" cy="500" rx="255" ry="42" fill="#d7dee8" opacity="0.65"/>
+    <path d="M80 520c20-132 78-205 136-205s118 73 137 205H80z" fill="url(#suit)"/>
+    <path d="M180 330h72l-16 96h-40z" fill="#f8fafc"/>
+    <circle cx="216" cy="206" r="86" fill="#d4a27a"/>
+    <path d="M128 194c8-69 43-110 89-110s83 41 88 110c-28-24-55-35-88-35s-62 11-89 35z" fill="#1f2330"/>
+    <path d="M94 112c44-58 204-58 246 0-22 22-64 35-123 35s-103-13-123-35z" fill="#ffffff"/>
+    <path d="M89 118c48-34 205-34 255 0" fill="none" stroke="#ba1f2d" stroke-width="16" stroke-linecap="round"/>
+    <path d="M104 128c50 24 178 24 226 0" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.75"/>
+    <rect x="108" y="170" width="216" height="178" rx="18" fill="none" stroke="#ffffff" stroke-width="20" opacity="0.86"/>
+    <rect x="85" y="208" width="260" height="120" rx="10" fill="#071b3a" opacity="0.92"/>
+    <text x="215" y="279" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#e5ba55">YASIR</text>
+  </g>
+</svg>
