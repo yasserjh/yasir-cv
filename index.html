@@ -9,12 +9,31 @@
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#04142d" />
   <title>Yasir Aljuhani | Senior Project Manager</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+    <symbol id="icon-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="icon-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="m8.5 12.5-1.6 7 5.1-3 5.1 3-1.6-7"/></symbol>
+    <symbol id="icon-briefcase" viewBox="0 0 24 24"><path d="M10 6V5a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v1"/><path d="M4 7h16v12H4z"/><path d="M4 12h16"/></symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24"><path d="m3 6 6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14"/><path d="M15 6v14"/></symbol>
+    <symbol id="icon-badge" viewBox="0 0 24 24"><path d="M12 3 4.8 6v5.8c0 4.5 3 7.7 7.2 9.2 4.2-1.5 7.2-4.7 7.2-9.2V6z"/><path d="m8.7 12 2.2 2.2 4.5-4.8"/></symbol>
+    <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16v-5"/><path d="M12 16V8"/><path d="M16 16v-3"/></symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3"/><path d="M22 12h-3"/><path d="M12 22v-3"/><path d="M2 12h3"/></symbol>
+    <symbol id="icon-train" viewBox="0 0 24 24"><path d="M7 3h10a3 3 0 0 1 3 3v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V6a3 3 0 0 1 3-3Z"/><path d="M8 18 6 21"/><path d="m16 18 2 3"/><path d="M8 8h8"/><path d="M8 13h.01"/><path d="M16 13h.01"/></symbol>
+    <symbol id="icon-workflow" viewBox="0 0 24 24"><rect x="3" y="4" width="6" height="6" rx="2"/><rect x="15" y="14" width="6" height="6" rx="2"/><path d="M9 7h3a3 3 0 0 1 3 3v4"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M6.5 9.5V19"/><path d="M10.5 19v-5.1a4 4 0 0 1 8 0V19"/><path d="M6.5 5.3v.1"/><path d="M3.8 19h16.4"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M10 14 20 4"/><path d="M20 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5"/></symbol>
+  </svg>
+
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="Yasir Aljuhani homepage">
       <span class="brand-mark">Y</span>
@@ -28,11 +47,29 @@
       <a href="#credentials">Credentials</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="download-btn" href="assets/Yasir_Theyab_Aljohani_Resume.pdf" download>Download CV <span aria-hidden="true">⌄</span></a>
+    <div class="header-actions">
+      <a class="download-btn magnetic" href="assets/Yasir_Theyab_Aljohani_Resume.pdf" download>
+        <svg aria-hidden="true"><use href="#icon-download"></use></svg>
+        <span>Download CV</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-icon" aria-hidden="true"><use href="#icon-menu"></use></svg>
+        <svg class="close-icon" aria-hidden="true"><use href="#icon-x"></use></svg>
+      </button>
+    </div>
   </header>
 
+  <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="#top">Home</a>
+    <a href="#recognition">Recognition</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <main>
-    <section class="hero section-shell">
+    <section class="hero section-shell" data-reveal>
       <div class="hero-copy">
         <p class="kicker">SENIOR PROJECT MANAGER</p>
         <h1>Yasir Aljuhani</h1>
@@ -40,29 +77,28 @@
         <p class="location"><span aria-hidden="true">●</span> Riyadh, Saudi Arabia</p>
         <p class="intro">Results-driven project professional leading complex infrastructure and operations initiatives with strong control over planning, risk, stakeholders, reporting, and delivery governance.</p>
         <div class="hero-actions">
-          <a class="primary-btn" href="#recognition">View Recognition <span aria-hidden="true">→</span></a>
-          <a class="secondary-btn" href="mailto:yaseraljuhani@gmail.com?subject=Professional%20Opportunity%20-%20Yasir%20Aljuhani">Contact Me <span aria-hidden="true">✉</span></a>
+          <a class="primary-btn magnetic" href="#recognition">View Recognition <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+          <a class="secondary-btn magnetic" href="mailto:yaseraljuhani@gmail.com?subject=Professional%20Opportunity%20-%20Yasir%20Aljuhani">Contact Me <svg aria-hidden="true"><use href="#icon-mail"></use></svg></a>
         </div>
       </div>
 
-      <aside class="hero-card" aria-label="Professional profile card">
+      <aside class="hero-card tilt-card" aria-label="Professional profile card">
         <div class="portrait-wrap">
           <img src="assets/Photo" alt="Professional portrait of Yasir Aljuhani" />
-          <div class="riyadh-skyline" aria-hidden="true"></div>
         </div>
         <div class="stats-bar">
           <div class="stat-item">
-            <span class="stat-icon">▣</span>
+            <span class="icon-box small"><svg aria-hidden="true"><use href="#icon-briefcase"></use></svg></span>
             <strong>5+</strong>
             <small>Years Experience</small>
           </div>
           <div class="stat-item mid">
-            <span class="stat-icon">◎</span>
+            <span class="icon-box small"><svg aria-hidden="true"><use href="#icon-badge"></use></svg></span>
             <strong>PMP®</strong>
             <small>Certified</small>
           </div>
           <div class="stat-item">
-            <span class="stat-icon">✦</span>
+            <span class="icon-box small"><svg aria-hidden="true"><use href="#icon-award"></use></svg></span>
             <strong>2025</strong>
             <small>Ministerial Recognition</small>
           </div>
@@ -70,7 +106,7 @@
       </aside>
     </section>
 
-    <section class="recognition section-shell" id="recognition">
+    <section class="recognition section-shell" id="recognition" data-reveal>
       <div class="recognition-copy">
         <p class="kicker">RECOGNITION</p>
         <h2>Recognition & Leadership Moment</h2>
@@ -83,26 +119,26 @@
         </div>
       </div>
       <div class="recognition-gallery">
-        <figure class="recognition-media">
+        <figure class="recognition-media interactive-media" data-reveal data-reveal-delay="80">
           <img src="assets/Recognition%20Ceremony%20with%20the%20Minister%20of%20Transport%20and%20SAR%20CEO" alt="Recognition ceremony with the Minister of Transport and SAR CEO" />
           <figcaption>Recognition ceremony with the Minister of Transport and SAR CEO.</figcaption>
         </figure>
-        <figure class="recognition-media award-plaque">
+        <figure class="recognition-media award-plaque interactive-media" data-reveal data-reveal-delay="160">
           <img src="assets/30106D88-3B1C-41E3-8EA9-2E1E1C8757DB.png" alt="Certificate of appreciation from the Ministry of Transport and Logistic Services" />
           <figcaption>Certificate of appreciation from the Ministry of Transport and Logistic Services.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="proof-strip section-shell" aria-label="Professional highlights">
-      <article><strong>PMP®</strong><span>Project Management Professional</span></article>
-      <article><strong>CKPI</strong><span>KPI Institute Certified</span></article>
-      <article><strong>C-SBP</strong><span>Strategy & Business Planning</span></article>
+    <section class="proof-strip section-shell" aria-label="Professional highlights" data-reveal>
+      <article class="proof-card"><span class="icon-box"><svg aria-hidden="true"><use href="#icon-badge"></use></svg></span><strong>PMP®</strong><span>Project Management Professional</span></article>
+      <article class="proof-card"><span class="icon-box"><svg aria-hidden="true"><use href="#icon-chart"></use></svg></span><strong>CKPI</strong><span>KPI Institute Certified</span></article>
+      <article class="proof-card"><span class="icon-box"><svg aria-hidden="true"><use href="#icon-target"></use></svg></span><strong>C-SBP</strong><span>Strategy & Business Planning</span></article>
     </section>
 
     <section class="cards-grid section-shell" id="about">
-      <article class="info-card experience-card" id="experience">
-        <div class="section-title"><span class="title-icon">▣</span><h2>Experience</h2></div>
+      <article class="info-card experience-card" id="experience" data-reveal>
+        <div class="section-title"><span class="icon-box"><svg aria-hidden="true"><use href="#icon-briefcase"></use></svg></span><h2>Experience</h2></div>
         <div class="timeline">
           <div class="timeline-item gold-dot">
             <h3>Senior Project Delivery Engineer</h3>
@@ -125,61 +161,49 @@
         </div>
       </article>
 
-      <article class="info-card" id="projects">
-        <div class="section-title"><span class="title-icon">▰</span><h2>Projects</h2></div>
+      <article class="info-card" id="projects" data-reveal data-reveal-delay="90">
+        <div class="section-title"><span class="icon-box"><svg aria-hidden="true"><use href="#icon-map"></use></svg></span><h2>Projects</h2></div>
         <div class="project-list">
           <div class="project-row">
-            <span class="project-icon">▣</span>
-            <div>
-              <h3>SAR Smart Location Brain</h3>
-              <p class="meta-line">Operational Intelligence</p>
-              <p>Deterministic location intelligence linking OCC incidents to trusted railway coordinates, mapping logic, and analysis-ready outputs.</p>
-            </div>
+            <span class="icon-box"><svg aria-hidden="true"><use href="#icon-map"></use></svg></span>
+            <div><h3>SAR Smart Location Brain</h3><p class="meta-line">Operational Intelligence</p><p>Deterministic location intelligence linking OCC incidents to trusted railway coordinates, mapping logic, and analysis-ready outputs.</p></div>
           </div>
           <div class="project-row">
-            <span class="project-icon">▣</span>
-            <div>
-              <h3>Infrastructure Delivery Governance</h3>
-              <p class="meta-line">Planning & Controls</p>
-              <p>Structured delivery controls covering scope, interfaces, readiness gates, approvals, risk visibility, and executive reporting.</p>
-            </div>
+            <span class="icon-box"><svg aria-hidden="true"><use href="#icon-workflow"></use></svg></span>
+            <div><h3>Infrastructure Delivery Governance</h3><p class="meta-line">Planning & Controls</p><p>Structured delivery controls covering scope, interfaces, readiness gates, approvals, risk visibility, and executive reporting.</p></div>
           </div>
           <div class="project-row">
-            <span class="project-icon">▣</span>
-            <div>
-              <h3>WON / OCC Automation</h3>
-              <p class="meta-line">Python, VBA, Excel</p>
-              <p>Automation for Weekly Operating Notice outputs and OCC data workflows to reduce manual handling and improve reliability.</p>
-            </div>
+            <span class="icon-box"><svg aria-hidden="true"><use href="#icon-chart"></use></svg></span>
+            <div><h3>WON / OCC Automation</h3><p class="meta-line">Python, VBA, Excel</p><p>Automation for Weekly Operating Notice outputs and OCC data workflows to reduce manual handling and improve reliability.</p></div>
           </div>
         </div>
       </article>
 
-      <article class="info-card" id="credentials">
-        <div class="section-title"><span class="title-icon">◈</span><h2>Credentials</h2></div>
+      <article class="info-card" id="credentials" data-reveal data-reveal-delay="180">
+        <div class="section-title"><span class="icon-box"><svg aria-hidden="true"><use href="#icon-badge"></use></svg></span><h2>Credentials</h2></div>
         <div class="cert-list">
-          <div class="cert-row"><span class="cert-badge">PM</span><div><h3>PMP®</h3><p>Project Management Institute</p><a class="proof-link" href="assets/Project%20Management%20Professional%20(PMP).pdf" target="_blank" rel="noreferrer">View proof</a></div></div>
-          <div class="cert-row"><span class="cert-badge">KP</span><div><h3>CKPI</h3><p>Certified KPI Professional</p><a class="proof-link" href="assets/C-KPI-%20Certified%20KPI%20Professional.pdf" target="_blank" rel="noreferrer">View proof</a></div></div>
-          <div class="cert-row"><span class="cert-badge">SB</span><div><h3>C-SBP</h3><p>Strategy & Business Planning Professional</p><a class="proof-link" href="assets/C-SBP-Certified-Yasir%20Theyab%20Aljohani.pdf" target="_blank" rel="noreferrer">View proof</a></div></div>
+          <div class="cert-row"><span class="icon-box"><svg aria-hidden="true"><use href="#icon-badge"></use></svg></span><div><h3>PMP®</h3><p>Project Management Institute</p><a class="proof-link" href="assets/Project%20Management%20Professional%20(PMP).pdf" target="_blank" rel="noreferrer">View proof <svg aria-hidden="true"><use href="#icon-external"></use></svg></a></div></div>
+          <div class="cert-row"><span class="icon-box"><svg aria-hidden="true"><use href="#icon-chart"></use></svg></span><div><h3>CKPI</h3><p>Certified KPI Professional</p><a class="proof-link" href="assets/C-KPI-%20Certified%20KPI%20Professional.pdf" target="_blank" rel="noreferrer">View proof <svg aria-hidden="true"><use href="#icon-external"></use></svg></a></div></div>
+          <div class="cert-row"><span class="icon-box"><svg aria-hidden="true"><use href="#icon-target"></use></svg></span><div><h3>C-SBP</h3><p>Strategy & Business Planning Professional</p><a class="proof-link" href="assets/C-SBP-Certified-Yasir%20Theyab%20Aljohani.pdf" target="_blank" rel="noreferrer">View proof <svg aria-hidden="true"><use href="#icon-external"></use></svg></a></div></div>
         </div>
       </article>
     </section>
 
-    <section class="development section-shell">
+    <section class="development section-shell" data-reveal>
       <div>
         <p class="kicker">PROFESSIONAL DEVELOPMENT</p>
         <h2>Built for infrastructure, risk, reporting, and operational decision-making.</h2>
       </div>
       <div class="development-grid">
-        <article><strong>Railway Operations Management</strong><span>Railway operations and infrastructure context</span><a class="proof-link" href="assets/Railway%20Operations%20Management.pdf" target="_blank" rel="noreferrer">View certificate</a></article>
-        <article><strong>Auditing of Projects and Contracts</strong><span>Project controls, contracts, and governance</span></article>
-        <article><strong>Advanced Risk Management</strong><span>Risk planning and mitigation</span></article>
-        <article><strong>Power BI & Automation</strong><span>Decision support and reporting intelligence</span></article>
+        <article><span class="icon-box"><svg aria-hidden="true"><use href="#icon-train"></use></svg></span><strong>Railway Operations Management</strong><span>Railway operations and infrastructure context</span><a class="proof-link" href="assets/Railway%20Operations%20Management.pdf" target="_blank" rel="noreferrer">View certificate <svg aria-hidden="true"><use href="#icon-external"></use></svg></a></article>
+        <article><span class="icon-box"><svg aria-hidden="true"><use href="#icon-briefcase"></use></svg></span><strong>Auditing of Projects and Contracts</strong><span>Project controls, contracts, and governance</span></article>
+        <article><span class="icon-box"><svg aria-hidden="true"><use href="#icon-target"></use></svg></span><strong>Advanced Risk Management</strong><span>Risk planning and mitigation</span></article>
+        <article><span class="icon-box"><svg aria-hidden="true"><use href="#icon-chart"></use></svg></span><strong>Power BI & Automation</strong><span>Decision support and reporting intelligence</span></article>
       </div>
     </section>
 
-    <section class="skills-panel section-shell" aria-label="Core skills">
-      <div class="skills-title"><span>★</span><h2>Skills</h2></div>
+    <section class="skills-panel section-shell" aria-label="Core skills" data-reveal>
+      <div class="skills-title"><span class="icon-box"><svg aria-hidden="true"><use href="#icon-award"></use></svg></span><h2>Skills</h2></div>
       <div class="skills-list">
         <span>Project Delivery</span>
         <span>Risk Management</span>
@@ -192,15 +216,15 @@
       </div>
     </section>
 
-    <section class="contact-panel section-shell" id="contact">
+    <section class="contact-panel section-shell" id="contact" data-reveal>
       <div class="contact-copy">
         <h2>Let’s Connect</h2>
         <p>I’m open to strategic opportunities, infrastructure delivery roles, operational excellence initiatives, and serious professional collaborations.</p>
       </div>
       <div class="contact-methods">
-        <div class="contact-item"><span>☎</span><div><strong>Phone</strong><a href="tel:+966543700250">+966 54 370 0250</a></div></div>
-        <div class="contact-item"><span>✉</span><div><strong>Email</strong><a href="mailto:yaseraljuhani@gmail.com">yaseraljuhani@gmail.com</a></div></div>
-        <div class="contact-item"><span>in</span><div><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/yasiraljohani" target="_blank" rel="noreferrer">linkedin.com/in/yasiraljohani</a></div></div>
+        <div class="contact-item"><span class="icon-box dark"><svg aria-hidden="true"><use href="#icon-phone"></use></svg></span><div><strong>Phone</strong><a href="tel:+966543700250">+966 54 370 0250</a></div></div>
+        <div class="contact-item"><span class="icon-box dark"><svg aria-hidden="true"><use href="#icon-mail"></use></svg></span><div><strong>Email</strong><a href="mailto:yaseraljuhani@gmail.com">yaseraljuhani@gmail.com</a></div></div>
+        <div class="contact-item"><span class="icon-box dark"><svg aria-hidden="true"><use href="#icon-linkedin"></use></svg></span><div><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/yasiraljohani" target="_blank" rel="noreferrer">linkedin.com/in/yasiraljohani</a></div></div>
       </div>
     </section>
   </main>
@@ -208,5 +232,7 @@
   <footer class="site-footer section-shell">
     <span>© Yasir Aljuhani</span>
   </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
