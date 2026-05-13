@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Recognition ceremony placeholder</title>
+  <desc id="desc">Premium placeholder for the recognition ceremony photo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#04142d"/>
+      <stop offset="1" stop-color="#071b3a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#c9962e"/>
+      <stop offset="1" stop-color="#e5ba55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <g opacity="0.18" fill="#ffffff">
+    <circle cx="1010" cy="120" r="210"/>
+    <circle cx="130" cy="620" r="260"/>
+  </g>
+  <g transform="translate(110 110)">
+    <rect x="0" y="0" width="980" height="500" rx="28" fill="#ffffff" opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/>
+    <rect x="48" y="50" width="884" height="74" rx="14" fill="url(#gold)" opacity="0.95"/>
+    <text x="490" y="99" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="800" fill="#04142d">RECOGNITION CEREMONY</text>
+    <g transform="translate(110 190)">
+      <circle cx="95" cy="78" r="54" fill="#e5ba55" opacity="0.92"/>
+      <rect x="40" y="145" width="110" height="160" rx="26" fill="#ffffff" opacity="0.9"/>
+      <circle cx="305" cy="78" r="54" fill="#e5ba55" opacity="0.92"/>
+      <rect x="250" y="145" width="110" height="160" rx="26" fill="#ffffff" opacity="0.9"/>
+      <circle cx="515" cy="78" r="54" fill="#e5ba55" opacity="0.92"/>
+      <rect x="460" y="145" width="110" height="160" rx="26" fill="#ffffff" opacity="0.9"/>
+      <circle cx="725" cy="78" r="54" fill="#e5ba55" opacity="0.92"/>
+      <rect x="670" y="145" width="110" height="160" rx="26" fill="#ffffff" opacity="0.9"/>
+    </g>
+    <text x="490" y="450" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" opacity="0.92">Minister of Transport and SAR CEO</text>
+  </g>
+</svg>
