@@ -21,7 +21,8 @@
   margin-bottom:26px;
 }
 .showcase-head h2,
-.method-head h2{
+.method-head h2,
+.about-story-copy h2{
   margin:0;
   font-family:"Playfair Display",serif;
   font-size:clamp(34px,4.2vw,52px);
@@ -203,6 +204,7 @@
   font-weight:750;
   line-height:1.45;
 }
+.about-story,
 .method-section{
   margin-top:24px;
   margin-bottom:24px;
@@ -211,6 +213,23 @@
   border-radius:18px;
   background:#fff;
   box-shadow:var(--shadow-card);
+}
+.about-story{
+  display:grid;
+  grid-template-columns:.82fr 1.18fr;
+  gap:28px;
+  align-items:start;
+}
+.about-story-text{
+  display:grid;
+  gap:14px;
+}
+.about-story-text p{
+  margin:0;
+  color:#586273;
+  line-height:1.72;
+  font-size:15px;
+  font-weight:540;
 }
 .method-head{
   max-width:760px;
@@ -267,15 +286,15 @@
   color:var(--gold);
 }
 @media(max-width:1050px){
-  .showcase-head{grid-template-columns:1fr;align-items:start}
+  .showcase-head,.about-story{grid-template-columns:1fr;align-items:start}
   .showcase-grid{grid-template-columns:1fr}
   .showcase-card.featured{min-height:auto}
   .impact-panel{grid-template-columns:repeat(2,1fr)}
   .method-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:680px){
-  .project-showcase,.method-section{padding:20px;margin-top:22px}
-  .showcase-head h2,.method-head h2{font-size:36px}
+  .project-showcase,.method-section,.about-story{padding:20px;margin-top:22px}
+  .showcase-head h2,.method-head h2,.about-story-copy h2{font-size:36px}
   .showcase-card img,.showcase-card.featured img{height:230px}
   .showcase-content{padding:18px}
   .showcase-content h3{font-size:18px}
