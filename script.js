@@ -1,3 +1,5 @@
+document.documentElement.classList.add('has-js');
+
 const header = document.querySelector('.site-header');
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileNav = document.querySelector('.mobile-nav');
