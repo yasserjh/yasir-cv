@@ -7,8 +7,16 @@ const mobileLinks = document.querySelectorAll('.mobile-nav a');
 const revealItems = document.querySelectorAll('[data-reveal]');
 const magneticItems = document.querySelectorAll('.magnetic');
 const tiltCards = document.querySelectorAll('.tilt-card');
+const heroPortrait = document.querySelector('.portrait-wrap img');
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (heroPortrait) {
+  heroPortrait.src = 'assets/EDA59FCF-B9FE-4673-82D1-B2BEEA9F89FB.jpeg';
+  heroPortrait.alt = 'Professional portrait of Yasir Aljuhani in Saudi attire';
+  heroPortrait.loading = 'eager';
+  heroPortrait.decoding = 'async';
+}
 
 function setHeaderState() {
   if (!header) return;
