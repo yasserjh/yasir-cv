@@ -1,3 +1,5 @@
+const navLinks = [...document.querySelectorAll('.main-nav a[href^="#"], .mobile-nav a[href^="#"]')];
+const currentYear = document.getElementById('current-year');
 document.documentElement.classList.add('has-js');
 
 const header = document.querySelector('.site-header');
@@ -7,16 +9,8 @@ const mobileLinks = document.querySelectorAll('.mobile-nav a');
 const revealItems = document.querySelectorAll('[data-reveal]');
 const magneticItems = document.querySelectorAll('.magnetic');
 const tiltCards = document.querySelectorAll('.tilt-card');
-const heroPortrait = document.querySelector('.portrait-wrap img');
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-if (heroPortrait) {
-  heroPortrait.src = 'assets/EDA59FCF-B9FE-4673-82D1-B2BEEA9F89FB.jpeg';
-  heroPortrait.alt = 'Professional portrait of Yasir Aljuhani in Saudi attire';
-  heroPortrait.loading = 'eager';
-  heroPortrait.decoding = 'async';
-}
 
 function setHeaderState() {
   if (!header) return;
@@ -100,3 +94,28 @@ if (!prefersReducedMotion && window.matchMedia('(hover: hover)').matches) {
     });
   });
 }
+
+if (currentYear) {
+  currentYear.textContent = String(new Date().getFullYear());
+}
+
+const navTargets = [...new Set(navLinks.map((link) => link.getAttribute('href')))]
+  .map((href) => ({ href, element: href ? document.querySelector(href) : null }))
+  .filter((item) => item.element);
+
+function updateActiveNavigation() {
+  const marker = window.scrollY + 190;
+  let activeHref = '#top';
+  navTargets.forEach((item) => {
+    if (item.element.offsetTop <= marker) activeHref = item.href;
+  });
+  navLinks.forEach((link) => {
+    const isActive = link.getAttribute('href') === activeHref;
+    link.classList.toggle('active', isActive);
+    if (isActive) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
+  });
+}
+
+updateActiveNavigation();
+window.addEventListener('scroll', updateActiveNavigation, { passive: true });
