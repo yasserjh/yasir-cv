@@ -304,3 +304,15 @@
 @media(prefers-reduced-motion:reduce){
   .project-showcase,.showcase-card,.showcase-card img,.project-tags span,.impact-panel article,.method-grid article{transition:none!important;transform:none!important}
 }
+
+
+/* Keep the third selected project balanced after the portfolio was simplified. */
+.showcase-card-wide{
+  grid-column:1/-1;
+}
+.showcase-card-wide .showcase-content{
+  max-width:900px;
+}
+@media(max-width:1050px){
+  .showcase-card-wide{grid-column:auto}
+}
