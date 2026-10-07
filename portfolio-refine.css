@@ -1,0 +1,166 @@
+/* Portfolio refinement: simpler hierarchy, larger readable type, more editorial spacing. */
+body{font-size:16px;line-height:1.6}
+.section-shell{width:min(1160px,calc(100% - 44px))}
+.kicker{margin-bottom:16px;font-size:12px;letter-spacing:.11em}
+.editorial-section{scroll-margin-top:96px}
+.section-intro h2,.showcase-head h2,.recognition-copy h2,.foundation-intro h2{
+  font-family:"Playfair Display",serif;color:var(--navy);font-size:clamp(34px,4vw,48px);
+  line-height:1.02;letter-spacing:-.035em;margin:0 0 18px
+}
+.section-intro>p:not(.kicker),.career-intro>p:not(.kicker){color:#5c6678;font-size:15px;line-height:1.7}
+.main-nav{gap:22px;font-size:12.5px}
+.main-nav a{padding-left:1px;padding-right:1px}
+
+/* About: open editorial layout rather than another floating dashboard card. */
+.about-story{
+  margin-top:54px;margin-bottom:34px;padding:46px 0;border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  border-radius:0;background:transparent;box-shadow:none;grid-template-columns:.78fr 1.22fr;gap:58px
+}
+.about-story:hover{transform:none;box-shadow:none;border-color:var(--line)}
+.about-story-text{gap:18px}
+.about-story-text p{font-size:16px;line-height:1.78;color:#4f5b6f;font-weight:470}
+
+/* Selected work: make the two applications the visual centrepiece. */
+.project-showcase{
+  margin-top:28px;margin-bottom:38px;padding:48px 0 30px;border:0;border-radius:0;background:transparent;box-shadow:none
+}
+.project-showcase:hover{transform:none;border-color:transparent;box-shadow:none}
+.showcase-head{grid-template-columns:1.06fr .94fr;gap:64px;align-items:end;margin-bottom:34px}
+.showcase-head p:last-child{font-size:15px;line-height:1.75;color:#586273}
+.case-study-grid{display:grid;grid-template-columns:1fr;gap:24px}
+.case-study{
+  display:grid!important;grid-template-columns:minmax(0,1.18fr) minmax(330px,.82fr);
+  min-height:0!important;border:1px solid #e3e8f0;border-radius:18px;overflow:hidden;background:#fff;
+  box-shadow:0 14px 42px rgba(12,29,60,.055)
+}
+.case-study:hover{transform:translateY(-3px);box-shadow:0 22px 58px rgba(12,29,60,.10);border-color:rgba(201,150,46,.28)}
+.case-study figure{height:100%;border:0;border-right:1px solid #edf0f5;background:linear-gradient(145deg,#f1f5f9,#fff)}
+.case-study figure:after{display:none}
+.case-study img,.case-study.featured img{
+  width:100%;height:100%;min-height:420px;object-fit:contain;object-position:center;padding:14px;transform:none!important;filter:none!important
+}
+.case-study .showcase-content{padding:34px;gap:13px;justify-content:center}
+.showcase-content h3{font-size:24px;line-height:1.18}
+.showcase-content p{font-size:15px;line-height:1.67;font-weight:470;color:#536074}
+.project-breakdown{gap:12px}
+.project-breakdown strong{font-weight:800}
+.project-label{font-size:10.5px;font-weight:800}
+.project-tags{padding-top:14px;margin-top:4px}
+.project-tags span{font-size:11.5px;font-weight:700}
+
+/* Behind the systems is supporting proof, not a third competing project card. */
+.behind-systems{
+  margin-top:30px;padding:34px 0 4px;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:.72fr 1.28fr;gap:48px
+}
+.behind-intro h3{margin:0 0 10px;font-family:"Playfair Display",serif;font-size:30px;line-height:1.1;color:var(--navy)}
+.behind-intro>p:last-child{margin:0;color:#5a6577;font-size:15px;line-height:1.7}
+.behind-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.behind-grid>div{padding:18px 0;border-top:1px solid #e5eaf1}
+.behind-grid strong{display:block;color:var(--navy);font-size:14px;margin-bottom:7px}
+.behind-grid span{display:block;color:#5d687a;font-size:14px;line-height:1.6}
+
+/* Recognition: retain the proof, reduce gallery-like noise. */
+.recognition{
+  margin-top:18px;margin-bottom:28px;padding:46px 0;border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  border-radius:0;background:transparent;box-shadow:none;grid-template-columns:.72fr 1.28fr;gap:50px
+}
+.recognition:hover{box-shadow:none;border-color:var(--line)}
+.recognition-copy p{font-size:15px;line-height:1.75}
+.recognition-gallery{grid-template-columns:1.2fr .8fr;gap:12px}
+.recognition-media{border-radius:12px;box-shadow:0 8px 24px rgba(12,29,60,.05)}
+.recognition-media:hover{transform:none;box-shadow:0 12px 32px rgba(12,29,60,.08)}
+.recognition-media img{height:310px}
+.recognition-media.award-plaque img{padding:10px}
+.recognition-media figcaption{font-size:11.5px;padding:10px 12px}
+
+/* Career: concise context, not a duplicate CV. */
+.career-section{
+  display:grid;grid-template-columns:.68fr 1.32fr;gap:64px;padding:48px 0;margin-top:14px;margin-bottom:14px;
+  border-bottom:1px solid var(--line)
+}
+.career-intro{align-self:start}
+.text-link{
+  display:inline-flex;align-items:center;gap:7px;margin-top:10px;color:var(--gold);font-size:13px;font-weight:800
+}
+.text-link svg{width:15px;height:15px}
+.career-timeline{display:grid}
+.career-entry{padding:26px 0;border-top:1px solid #e4e9f0}
+.career-entry:first-child{padding-top:2px;border-top:0}
+.career-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:12px}
+.career-head h3{margin:0 0 5px;color:var(--navy);font-size:19px}
+.career-head>span{flex:none;padding:6px 9px;border-radius:999px;background:var(--gold-soft);color:#7d5714;font-size:10.5px;font-weight:800}
+.career-meta{margin:0!important;color:#6a7485!important;font-size:13px!important;line-height:1.5}
+.career-entry>p,.career-list{font-size:15px;line-height:1.68;color:#536074}
+.career-entry>p{margin-bottom:0}
+.career-list{margin:12px 0 0;padding-left:18px;display:grid;gap:8px}
+.career-list li::marker{color:var(--gold)}
+
+/* Education, credentials, and capabilities: open rows instead of three more card grids. */
+.foundation-section{
+  display:grid;grid-template-columns:.68fr 1.32fr;gap:64px;padding:48px 0 54px;margin-bottom:8px;border-bottom:1px solid var(--line)
+}
+.foundation-content{display:grid}
+.foundation-group{padding:26px 0;border-top:1px solid #e4e9f0}
+.foundation-group:first-child{padding-top:2px;border-top:0}
+.foundation-group h3{margin:0 0 18px;color:var(--navy);font-size:18px}
+.foundation-lines,.credential-lines{display:grid}
+.foundation-lines>div,.credential-lines>div{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding:13px 0;border-top:1px solid #edf0f5
+}
+.foundation-lines>div:first-child,.credential-lines>div:first-child{border-top:0;padding-top:0}
+.foundation-lines strong,.credential-lines strong{display:block;color:#17223b;font-size:14px;margin-bottom:3px}
+.foundation-lines span,.credential-lines span{display:block;color:#697386;font-size:13px;line-height:1.5}
+.credential-lines .proof-link{flex:none;margin-top:2px}
+.development-line{margin-top:3px}
+.capabilities-group{padding-bottom:0}
+.capability-row{display:grid;grid-template-columns:180px 1fr;gap:24px;padding:14px 0;border-top:1px solid #edf0f5}
+.capability-row:first-of-type{border-top:0}
+.capability-row strong{color:var(--navy);font-size:14px}
+.capability-row p{margin:0;color:#5c6779;font-size:14px;line-height:1.65}
+
+/* Keep important actions clear and body copy comfortably readable. */
+.contact-panel{margin-top:36px}
+.contact-copy p{font-size:14px;line-height:1.65}
+.contact-item a{font-size:13.5px}
+.proof-link{font-size:12.5px;font-weight:800}
+.site-footer{padding-top:2px;line-height:1.5}
+
+/* Reduce excess animation while keeping the existing identity. */
+.case-study,.recognition-media,.impact-panel article{transition-duration:240ms}
+.impact-panel article:hover{transform:translateY(-2px)}
+
+/* Responsive */
+@media(max-width:1050px){
+  .showcase-head,.about-story,.recognition,.career-section,.foundation-section,.behind-systems{grid-template-columns:1fr;gap:28px}
+  .case-study{grid-template-columns:1fr}
+  .case-study figure{border-right:0;border-bottom:1px solid #edf0f5}
+  .case-study img,.case-study.featured img{min-height:0;height:auto;max-height:560px}
+  .career-intro,.foundation-intro{max-width:720px}
+}
+@media(max-width:760px){
+  .section-shell{width:min(100% - 28px,1160px)}
+  .about-story,.recognition,.career-section,.foundation-section{padding:34px 0}
+  .project-showcase{padding:36px 0 22px}
+  .showcase-head{margin-bottom:24px}
+  .case-study .showcase-content{padding:24px}
+  .case-study img,.case-study.featured img{padding:8px}
+  .behind-grid{grid-template-columns:1fr}
+  .recognition-gallery{grid-template-columns:1fr}
+  .recognition-media img{height:auto;max-height:360px}
+  .foundation-lines>div,.credential-lines>div{flex-direction:column;gap:8px}
+  .capability-row{grid-template-columns:1fr;gap:6px}
+  .career-head{flex-direction:column}
+  .career-head>span{align-self:flex-start}
+  .site-footer{gap:6px}
+}
+@media(max-width:680px){
+  .main-nav{display:none}
+  .about-story-text p,.showcase-content p,.career-entry>p,.career-list{font-size:15px}
+  .showcase-content h3{font-size:21px}
+  .behind-intro h3{font-size:27px}
+  .section-intro h2,.showcase-head h2,.recognition-copy h2,.foundation-intro h2{font-size:34px}
+}
+@media(prefers-reduced-motion:reduce){
+  .case-study,.recognition-media,.impact-panel article{transition:none!important;transform:none!important}
+}
