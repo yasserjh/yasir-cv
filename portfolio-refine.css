@@ -198,3 +198,19 @@ body{font-size:16px;line-height:1.6}
   .recognition-main img,.recognition-media.award-plaque img{height:auto;max-height:360px}
   .footer-links{justify-content:center}
 }
+
+
+/* Delivery in practice: concise leadership evidence before the technical case studies. */
+.main-nav{gap:16px}
+.delivery-section{padding:34px 0 50px;margin-top:10px;margin-bottom:24px;border-bottom:1px solid var(--line)}
+.delivery-head{display:grid;grid-template-columns:1.03fr .97fr;gap:58px;align-items:end;margin-bottom:26px}
+.delivery-head h2{font-family:"Playfair Display",serif;color:var(--navy);font-size:clamp(34px,4vw,48px);line-height:1.06;letter-spacing:-.035em;margin:0}
+.delivery-head>p{margin:0;color:#596578;font-size:15px;line-height:1.75}
+.delivery-examples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.delivery-example{min-width:0;background:rgba(255,255,255,.84);border:1px solid #e3e8f0;border-radius:14px;padding:27px 25px 29px;box-shadow:0 10px 30px rgba(12,29,60,.035)}
+.delivery-index{display:block;margin-bottom:20px;color:#967023;font-size:10px;font-weight:800;letter-spacing:.11em}
+.delivery-example h3{font-size:19px;line-height:1.32;margin:0 0 12px;color:var(--navy)}
+.delivery-example p{font-size:14.5px;line-height:1.75;color:#576276;margin:0}
+@media(max-width:1050px){.delivery-head{grid-template-columns:1fr;gap:16px}.delivery-head>p{max-width:780px}}
+@media(max-width:800px){.delivery-examples{grid-template-columns:1fr}.delivery-example{padding:22px 23px}.delivery-index{margin-bottom:11px}.delivery-section{padding:32px 0 36px}}
+@media(max-width:680px){.delivery-head h2{font-size:34px}.delivery-example h3{font-size:18px}.delivery-example p{font-size:15px}}
